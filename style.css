@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  background: #0a0a0f;
+  color: #fff;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo-icon {
+  background: #7c5cfc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sidebar {
+  background: #12121a;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.panel {
+  margin-bottom: 15px;
+}
+
+.drop-zone {
+  border: 2px dashed #444;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drop-zone:hover {
+  border-color: #7c5cfc;
+}
+
+#genBtn {
+  width: 100%;
+  padding: 12px;
+  background: #7c5cfc;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#genBtn:disabled {
+  opacity: 0.4;
+}
+
+.canvas-area {
+  background: #12121a;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#mapCanvas {
+  min-height: 500px;
+  position: relative;
+}
+
+#emptyState {
+  text-align: center;
+  margin-top: 200px;
+  color: #777;
+}
