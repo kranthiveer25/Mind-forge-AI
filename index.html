@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MindForge — AI Mind Mapping Engine</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PDF Reader -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🧠</div>
+    <h1>MindForge</h1>
+  </div>
+  <div class="badge">Offline AI</div>
+</header>
+
+<div class="main">
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+<div class="panel">
+  <h3>Upload Files</h3>
+
+  <div class="drop-zone" id="dropZone">
+    Drop files here or click
+  </div>
+
+  <input type="file" id="fileInput" multiple>
+
+  <div id="fileList"></div>
+</div>
+
+<button id="genBtn" disabled>Generate Mind Map</button>
+
+</aside>
+
+
+<!-- Canvas -->
+<div class="canvas-area">
+
+<div id="mapCanvas">
+  <div id="emptyState">Upload files to start</div>
+  <div id="svgWrap"></div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
